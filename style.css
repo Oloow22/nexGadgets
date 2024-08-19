@@ -1,4 +1,13 @@
 
+:root {
+    --def-transition-duration: .2s;
+}
+
+html {
+    /* font-size: 16px; */
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+}
 
 .logo{
     font-weight: bold;
@@ -8,9 +17,18 @@
 }
  
 .links{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* border: solid 2px yellow; */
     font-size: 18px;
     color: #E5E7EB;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:700px;
+}
+
+.top-links{
+    color: whitesmoke;
 }
 
 .heading{
@@ -23,12 +41,16 @@
 .header{
     display: flex;
     justify-content: space-between;
-    height: 60px;
-    padding-top: 15px;
-    padding-right: 70px;
-    padding-left: 30px;
-    padding-bottom: 3px;
-    background-color: #0CAFFF;
+    background-color:  #151618;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero{
+    background-color: #151618;
+	height: 50vh;
+	padding-top: 3rem;
 }
 
 .subheader{
@@ -140,15 +162,13 @@ body{
 }
 
 button{
-    height: 40px;
-    width: 100px;
-    background-color: #3882F6;
-    border-radius: 9px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
     appearance: none;
+    border: 1px solid #9E70EB;
+    color: #9E70EB;
+    background-color: transparent;
+    border-radius: 10rem;
+    padding: .75rem 1.5rem;
+    cursor: pointer;
     
 }
 
@@ -165,8 +185,123 @@ button{
 
 .links{
     display: flex;
-    gap: 20px;
+    gap: 5px;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #A1A2A3;
+    display: inline-block;
+    padding: 1.5rem 0;
+}
+
+nav ul a:hover {
+    color: #E8E8E8;
+}
+
+.has-submenu {
+    position: relative;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.has-submenu ul {
+    position: absolute;
+    top: 100%;
+    left: -2rem;
+    background-color: #212224;
+    border-radius: .5rem;
+    padding: .5rem;
+    display: none;
+}
+
+.has-submenu ul a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-width: 15rem;
+    border-radius: .5rem;
+}
+
+.has-submenu::after {
+    content: url('icons/icon-arrow-down.svg');
+    opacity: .6;
+    height: 25px;
+}
+
+.has-submenu:hover ul {
+    display: block;
+}
+
+.has-submenu ul a::after {
+    content: url(icons/icon-arrow-right.svg);
+    height: 17px;
+    opacity: 0;
+}
+
+.has-submenu ul a:hover {
+    background-color: #2C2D2F;
+    padding: 1rem 1.5rem;
+}
+
+.has-submenu ul a:hover::after {
+    opacity: 1;
+}
+
+.has-submenu:hover::after {
+    opacity: 1;
+}
+
+.has-submenu:hover > a {
+    color: #E8E8E8;
+}
+
+.has-submenu::after{
+    transition-property: opacity;
+}
+
+.has-submenu ul{
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-1rem);
+    transition-property: opacity,visibility,transform;
+}
+
+.has-submenu:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.has-submenu ul a{
+    transition-property: background-color,padding;
+}
+
+.has-submenu ul a ::after{
+    transition-property: opacity;
+}
+
+nav ul a,
+		.has-submenu::after,
+		.has-submenu ul,
+		.has-submenu ul a,
+		.has-submenu ul a ::after{
+			transition-duration: var(--def-transition-duration);
+			transition-timing-function: ease-in-out;
+		}
+
 
 .subheader-content{
     display: flex;
