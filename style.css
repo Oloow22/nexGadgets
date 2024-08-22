@@ -28,11 +28,12 @@ img {
     display: flex;
     /* border:solid 2px saddlebrown; */
     justify-content: center; 
-    /* align-items: center;  */
-    width: 800px;
+    align-items: center; 
+    width: 600px;
     height: 400px;
     gap: 300px;
-    padding-right: 90px;
+    padding-right: 300px;
+    padding-left: 90px;
 
 }
 
@@ -95,10 +96,11 @@ img {
 .subheader{
     display: flex;
     gap:200px;
-    height: 600px;
+    height: 700px;
     padding: 20px;
     padding-left: 60px;
-    border: solid 2px yellowgreen;
+    /* border: solid 2px yellowgreen; */
+    padding-top: 5px;
 }
 
 .subtext{
@@ -148,7 +150,7 @@ img {
 .box-text{
     display: flex;
     justify-content: space-between;
-    gap: 70px;
+    gap: 300px;
 }
 
 .text{
