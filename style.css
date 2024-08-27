@@ -17,6 +17,88 @@ img {
     border-radius: 30%;
 }
 
+.individual-customer{
+    display: flex;
+    padding-left: 50px;
+    /* border: solid 2px skyblue; */
+    /* margin-left: -30px;
+    margin-top: -280px; */
+}
+
+.individual-customer .text{
+    padding-top: 3px;
+    z-index: 1;
+    margin-left: -90px;
+    margin-top: 100px;
+}
+
+.individual-customer2{
+    display: flex;
+    flex-direction: row-reverse;
+    /* border: solid 2px skyblue; */
+    padding-right: 40px;
+    /* margin-left: -100px; */
+    /* margin-top: 290px; */
+}
+
+.individual-customer2 .text{
+    /* margin-top: 150px; */
+    margin-right: -100px;
+    z-index: 1;
+}
+
+.individual-customer3{
+    display: flex;
+    /* border: solid 2px skyblue; */
+    /* margin-left: -350px; */
+    /* margin-top: -350px; */
+    /* height: 200px; */
+    /* margin-right: 50px; */
+}
+
+.individual-customer3 .text{
+    z-index: 1;
+    margin-left: -60px;
+}
+
+.individual-customer4{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 50px;
+    /* border: solid 2px skyblue; */
+    /* margin-left: -350px; */
+    /* margin-top: -350px; */
+    /* height: 200px; */
+    /* margin-right: 50px; */
+}
+
+.individual-customer4 .text{
+    margin-right: -60px;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.firstAndSecondC{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* border: solid 2px brown; */
+    padding: 5px;
+    width: 620px;
+}
+
+.thirdAndFourth{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* border: solid 2px brown; */
+    padding: 5px;
+}
+
+.checked {
+    color: orange;
+  }
+
 .airpods{
     display: flex;
     flex-direction: column;
@@ -72,6 +154,15 @@ img {
 }
 
 .heading{
+    font-size: 40px;
+    font-weight: bold;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    color: #151618; 
+    margin-bottom: 30px;
+}
+
+.heading2{
+    margin-top: 30px;
     font-size: 40px;
     font-weight: bold;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
@@ -142,20 +233,23 @@ img {
 .information{
     display:flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 5px;
     align-items: center;
     margin-top: 10px;
+    padding-top:30px ;
     /* margin-bottom: 20px; */
-    height: 700px;
-    padding-top: 15px;
+    /* Reduce the height when done */
+    height: 1000px;
     background-color: #F9FAF8;
+    /* border: solid 2px hotpink; */
     /* border: solid 2px hotpink; */
 }
 
 .box-text{
     display: flex;
     /* justify-content: space-between; */
-    gap: 80px;
+    /* gap: 80px; */
+
 }
 
 .text{
@@ -175,6 +269,9 @@ img {
     border-radius: 5px;
     text-align: center;
     gap: 5px;
+    /* margin-left: -70px; */
+    margin-top: 30px;
+    margin-right: 30px;
 }
 
 
