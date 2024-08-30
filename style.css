@@ -17,6 +17,7 @@ img {
     border-radius: 30%;
 }
 
+
 .individual-customer{
     display: flex;
     padding-left: 50px;
@@ -239,7 +240,7 @@ img {
     padding-top:30px ;
     /* margin-bottom: 20px; */
     /* Reduce the height when done */
-    height: 1000px;
+    height: 1500px;
     background-color: #F9FAF8;
     /* border: solid 2px hotpink; */
     /* border: solid 2px hotpink; */
